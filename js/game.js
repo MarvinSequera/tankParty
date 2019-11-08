@@ -91,7 +91,6 @@ const game = {
             this.scoreBoard()
             this.gameOver()
             this.backgroundMusic()
-
         }, 1000 / this.fps)
     },
     reset() {
@@ -196,20 +195,14 @@ const game = {
         this.bullets.forEach(bullet => bullet.draw())
     },
     clearBullet() {
-        //this.bullets = this.bullets.filter(bullet => bullet.posX < this.wWidth)
         this.bullets.forEach((bullet, index) => {
-            if (bullet.posX > this.wWidth) {
-                this.bullets.splice(index, 1);
-            } else if (this.bullets.length == 30) {
-                this.bullets.splice(index, 1)
-            }
+            !(bullet.posX > 0 && bullet.posX < this.wWidth && bullet.posY > 0 && bullet.posY < this.wHeight) ? this.bullets.splice(index, 1) : null
+            //Creo una caja de colision que si no se cumple elimina del array el bullet 
         })
     },
     isCollitionTank() {
 
         this.bullets.forEach((e, index) => {
-            // console.log("Vida tanke A " + this.tank1.life)
-            // console.log("Vida tanke B " + this.tank2.life)
             if (e.origin == "tank1") {
                 if (this.tank2.posX + this.tank2.width >= e.posX && this.tank2.posX <= (e.posX + e.width) && this.tank2.posY + this.tank2.heigth >= e.posY && this.tank2.posY <= e.posY + e.heigth) {
                     this.tank2.life--
