@@ -48,11 +48,12 @@ const game = {
 
     },
     start() {
+        this.test = false
         this.interval = setInterval(() => {
             this.framesCounter++
             this.framesCounter > 800 ? this.framesCounter = 0 : null
-            this.clear()
-            this.drawAll()
+            this.test ? this.clear() : null
+            this.test ? this.drawAll() : null
             this.moveBullet()
             this.clearBullet()
             if (this.tank1.posX <= 0) {
