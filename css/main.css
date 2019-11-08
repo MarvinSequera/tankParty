@@ -1,0 +1,69 @@
+h1 {
+    font-size: 5em;
+    padding: 15px 0;
+    text-align: center;
+    color: snow;
+}
+h2 {
+    font-size: 3em;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 10px 0 10px 100px;
+}
+ul{
+    padding: 10px 50px;
+}
+a{
+    text-align: center;
+    margin: 40px 0px ;
+    padding: 25px 40px;
+    width: 300px;
+    background-color:#3D7D48;
+    color: white;
+    font-size: 2em;
+    border-radius: 5px;
+    text-decoration: none;
+}
+a:hover{
+    background-color: white;
+    color: #3D7D48;
+    border: 1px solid #3D7D48;
+    text-decoration: none;
+}
+i{
+    padding: 10px ;
+}
+img{
+    width: 300px;
+}
+.flex{
+    display: flex;
+}
+.around{
+    justify-content: space-around;
+}
+.center{
+    justify-content: center
+}
+.padding{
+    padding: 10px;
+}
+.bold{
+    font-weight: bold;
+}
+.background{
+    background-image: url(../img/grayCamu.jpg);
+
+}
+.padding{
+    padding: 20px 0;
+}
+.keys{
+    font-size: 3em;
+    color: #3D7D48;
+    list-style: none;;
+}
+.rules{
+    font-size: 1.3em;
+    padding-left: 50px;
+}
