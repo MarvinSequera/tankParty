@@ -26,11 +26,11 @@ class Player {
     }
     draw() {
         this.ctx.save()
-        // this.ctx.translate(this.posX + this.width / 2, this.posY + this.heigth / 2);
-        // this.ctx.rotate((Math.PI / 180) * this.angle)
-        // this.ctx.translate(-20, -40);
+        this.ctx.translate(this.posX + this.width / 2, this.posY + this.heigth / 2);
+        this.ctx.rotate((Math.PI / 180) * this.angle)
+        this.ctx.translate(-20, -40);
         this.ctx.drawImage(this.image, -this.posX / this.trasX, -this.posY / this.trasY, this.width, this.heigth)
-        // this.ctx.restore()
+        this.ctx.restore()
     }
     moveUp() {
         if (this.active.UP == true) {

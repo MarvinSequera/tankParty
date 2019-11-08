@@ -13,6 +13,6 @@ class Background {
         this.ctx.save()
     }
     finalDraw() {
-        this.ctx.drawImage(this.final, this.width * .25, this.heigth * .40, this.width * .5, this.heigth * .45)
+        this.ctx.drawImage(this.final, window.innerWidth * .25, window.innerHeight * .40, this.width * .5, this.heigth * .45)
     }
 }
