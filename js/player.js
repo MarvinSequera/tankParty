@@ -4,7 +4,7 @@ class Player {
         this.gameWidth = w
         this.gameHeigth = h
         this.image = new Image()
-        this.image.src = type == 'red' ? "../img/redtank.png" : "./img/greentank.png"
+        this.image.src = type == 'red' ? "./img/redtank.png" : "./img/greentank.png"
         this.bullets = []
         this.width = 61
         this.heigth = 87

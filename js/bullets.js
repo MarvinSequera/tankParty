@@ -2,7 +2,7 @@ class Bullets {
     constructor(ctx, width, heigth, posX, posY, velX, velY, origin) {
         this.ctx = ctx
         this.image = new Image()
-        this.image.src = "../Game/img/bullet.png"
+        this.image.src = "./img/bullet.png"
         this.width = width
         this.heigth = heigth
         this.posX = posX

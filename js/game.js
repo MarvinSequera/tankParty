@@ -95,7 +95,7 @@ const game = {
         }, 1000 / this.fps)
     },
     reset() {
-        this.background = new Background(this.ctx, this.wWidth, this.wHeight, '../Game/map/bg.png')
+        this.background = new Background(this.ctx, this.wWidth, this.wHeight, './map/bg.png')
     },
     clear() {
         this.ctx.clearRect(0, 0, this.wWidth, this.wHeight)
